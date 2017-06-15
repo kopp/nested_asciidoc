@@ -1,0 +1,10 @@
+
+=== Chapter 2a
+
+This is a sub-chapter to chapter 2.
+
+And here is an image:
+
+image::images/foo.jpg[]
+
+and this is behind the image.

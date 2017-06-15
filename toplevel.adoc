@@ -1,0 +1,18 @@
+= nested document
+
+:icons: font
+
+
+This is a document, build up from multiple nested documents.
+
+WARNING: This is not as easy as one might think on first glance.
+
+Here is chapter 1:
+
+:imagesdir: chapter1
+include::chapter1/chapter1.adoc[]
+
+Here is chapter 2:
+
+:imagesdir: chapter2
+include::chapter2/chapter2.adoc[]

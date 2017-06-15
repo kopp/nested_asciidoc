@@ -1,0 +1,26 @@
+
+== Chapter 2
+
+This is chapter 2.
+
+And here is an image:
+
+image::images/bar.jpg[bar image]
+
+And this is behind the image.
+
+And this is a sub-chapter, included in this chapter:
+
+currently, imagesdir is {imagesdir}
+
+
+ifndef::imagesdir[]
+:imagesdir: .
+endif::[]
+:imagesdir: {imagesdir}/chapter2a
+
+now it was changed to {imagesdir} in order to include something from there.
+
+WARNING: You will need something similar to the construct above to correctly nest documents.
+
+include::chapter2a/chapter2a.adoc[]

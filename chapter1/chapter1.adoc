@@ -1,0 +1,10 @@
+
+== Chapter 1
+
+This is chapter 1.
+
+And here is an image:
+
+image::images/foo.png[foo image]
+
+And this is behind the image.
