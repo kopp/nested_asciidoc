@@ -31,7 +31,24 @@ endif::[]
 :imagesdir: {imagesdir}/chapter2a    # chapter2a is the name of the nested hierarchy
 ```
 
-Note: the following will not work:
+## motivation
+
+Question: Why do I care about this?
+
+Answer: Because I want to be able to view each sub-page in an editor such as
+atom which provides asciidoc preview.  For this, the image paths must be
+relative to this single document.
+
+
+## alternatives
+
+One could also set the imagespath to the toplevel in each document and then
+resolve all image paths from *up there*.  This does not feel clean, though,
+because a document in a sub-folder would need to know in what sub-folder it is
+located.
+
+
+## what will not work
 
 The following attempts to append `/chapter2a` only if the `imagesdir` is
 already set; otherwise it should only be `chapter2a`.
