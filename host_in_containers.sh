@@ -5,7 +5,7 @@
 
 volume_name=asciidoctor_web_content
 nginx_name=nginx-for-asciidoctor
-exposed_port_no=6583
+exposed_port_no=6568
 
 # make sure, that the volume is present
 if ! docker volume ls | grep -q " ${volume_name}$"
@@ -32,7 +32,7 @@ fi
 # check IP address
 echo -n Access content on IP addres
 docker inspect $nginx_name | grep IPAddress | tail -n 1
-echo with port $exposed_port_no
+echo Or access on this host with port $exposed_port_no
 
 # actually run the container to generate content
 docker run --rm -v $(pwd):/documents/ -v $volume_name:/generated/ asciidoctor/docker-asciidoctor ./build_it.sh /generated
